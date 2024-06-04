@@ -1,0 +1,115 @@
+body{
+  background-image:  url("img.jpg");
+  background-position: center  center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-btn {
+    background-color: #00aef0;
+    color: white;
+    font-size: 12px;
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+  }
+  .titular{
+    color:#00aef0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  img{
+    margin-left: -8PX;
+    width: 300px;
+  }
+  .ajustar {
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    display: flex;
+    background-color: #00aef0;
+    justify-content: center;
+    border: 1px solid #00aef0;
+  }
+
+  .dropdown-ss {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: max-content;
+  }
+  
+  .content {
+    display: flex;
+  }
+  
+  .dropdown-ss .dropdown-contenido {
+    padding: 12px 20px;
+    border-left: 1px solid #ddd;
+  }
+  
+  .dropdown:hover .dropdown-ss{
+    display: block;
+  }
+  
+  .dropdown-contenido a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 5px;
+  }
+  
+  .dropdown-contenido a:hover {
+    background-color: rgb(0, 0, 0, 0.1);
+    color: #d87d27;
+  }
+  
+  .dropdown:hover .dropdown-btn {
+    color: #00aef0;
+    background-color: white;
+  }
+  .ver-btn{
+    background-color: white;
+    color: #d87d27;
+    padding: 12px 20px;
+    margin: 20px;
+    border: 1px solid;
+    font-weight: bold;
+  }
+  
+  .ver-btn:hover{
+    background-color: #d87d27;
+    color: white;
+  }
+  .contenedor{
+    color: white;
+    font-size: 20px;
+    
+  }
+  nav{
+    height: 100%;
+  }
+  nav > ul{
+    height: 100% ;
+    display: flex;
+  }
+  nav > ul >li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+  }
+
+  nav > ul >li>a{
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+  }

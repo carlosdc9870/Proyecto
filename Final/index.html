@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas - Angel M. Tapia</title>
+    <link href="stylos.css" rel="stylesheet"/>
+</head> 
+<body>
+    <h1>Proyectos Lab. de Programacion III</h1>
+    <p>Carlos David Cuevas Paredes 100465344 | Prof.: Radhames Silverio Gonzalez</p>
+    <hr/>
+    <script>
+        // Carga el archivo JSON
+    fetch('menu.json')
+    .then(response => response.json())
+    .then(data => {
+        // Genera el menú
+        let menu = document.createElement('ul');
+        menu.className = 'menu'; // Agrega la clase CSS 'menu' al elemento 'ul'
+        for (let item of data.items) {
+            let menuItem = document.createElement('li');
+            menuItem.className = 'menu-item'; // Agrega la clase CSS 'menu-item' al elemento 'li'
+            let link = document.createElement('a');
+            link.href = item.url;
+            link.textContent = item.name;
+            menuItem.appendChild(link);
+            menu.appendChild(menuItem);
+        }
+        document.body.appendChild(menu);
+    });
+    </script>
+</body>
+</html>
